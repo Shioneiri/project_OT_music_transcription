@@ -1,0 +1,28 @@
+# --- Environments ---
+# Never track these; they are machine-specific
+env_piano/
+thesis_env/
+anaconda_projects/
+bin/
+lib/
+include/
+*.pyc
+
+# --- Research Data & Results ---
+# Track your scripts, but not the heavy binary files they produce
+data/*.wav
+data/*.mp3
+data/*.aif
+**/*.mat
+**/*.npy
+results/*
+#Ignore the results inside the submodule
+modelAttackDecay-for-piano-transcription/result/ 
+
+# --- System & IDE Specific ---
+# MacOS specific junk
+.DS_Store
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# VS Code / Cursor settings
+.vscode/

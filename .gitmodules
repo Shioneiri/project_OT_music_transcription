@@ -1,0 +1,3 @@
+[submodule "modelAttackDecay-for-piano-transcription"]
+	path = modelAttackDecay-for-piano-transcription
+	url = https://github.com/beiciliang/modelAttackDecay-for-piano-transcription.git
