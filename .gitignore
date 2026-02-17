@@ -26,3 +26,16 @@ modelAttackDecay-for-piano-transcription/result/
 .ipynb_checkpoints/
 # VS Code / Cursor settings
 .vscode/
+
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Data files (Don't upload the whole SMD dataset!)
+data/SMD-piano_v2/
+*.mid
+*.wav
+*.mp3
+# Inside libnmfd
+*.egg-info/

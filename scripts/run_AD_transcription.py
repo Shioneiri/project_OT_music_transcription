@@ -12,16 +12,12 @@ submodule_path = "modelAttackDecay-for-piano-transcription"
 source_dir = os.path.join(submodule_path, "result")
 target_dir = "results/nmf_outputs"
 
-# 1. Run the training script
-print("Starting training...")
-subprocess.run([piano_python, "train-template.py"], cwd=submodule_path)
-
 # 2. Run the transcription script
 print("Starting NMF transcription...")
 audio_file = input("Audio file name? ")
-subprocess.run([piano_python, "nmf-transcription.py", audio_file], cwd=submodule_path)
 
-# . Move files to main results folder
+# Move specified audio file into data folder in main project repo
+# from submodule data repo
 if not os.path.exists(target_dir):
     os.makedirs(target_dir)
 
@@ -29,3 +25,15 @@ for filename in os.listdir(source_dir):
     if filename.endswith(".mat") or filename.endswith(".npy"):
         shutil.move(os.path.join(source_dir, filename), os.path.join(target_dir, filename))
         print(f"Moved: {filename} to {target_dir}")
+
+subprocess.run([piano_python, "nmf-transcription.py", audio_file], cwd=submodule_path)
+
+# 2. Move files to main results folder
+if not os.path.exists(target_dir):
+    os.makedirs(target_dir)
+
+for filename in os.listdir(source_dir):
+    if filename.endswith(".mat") or filename.endswith(".npy"):
+        shutil.move(os.path.join(source_dir, filename), os.path.join(target_dir, filename))
+        print(f"Moved: {filename} to {target_dir}")
+

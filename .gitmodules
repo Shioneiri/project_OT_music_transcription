@@ -1,3 +1,6 @@
 [submodule "modelAttackDecay-for-piano-transcription"]
 	path = modelAttackDecay-for-piano-transcription
 	url = https://github.com/beiciliang/modelAttackDecay-for-piano-transcription.git
+[submodule "libnmfd"]
+	path = libnmfd
+	url = https://github.com/groupmm/libnmfd.git
