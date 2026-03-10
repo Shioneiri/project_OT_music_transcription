@@ -5,7 +5,7 @@ My project on OT for music transcription. This repository contains experiments f
 ## Setup Instructions
 
 ### 1. Initialize Submodules
-This project relies on external repositories as submodules (e.g., `libnmfd` and `modelAttackDecay-for-piano-transcription`). To pull these in, run:
+This project relies on external repositories as submodules (i.e., `libnmfd`). To pull these in, run:
 
 ```bash
 git submodule update --init --recursive
