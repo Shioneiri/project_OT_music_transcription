@@ -4,3 +4,6 @@
 [submodule "libnmfd"]
 	path = libnmfd
 	url = https://github.com/groupmm/libnmfd.git
+[submodule "OST"]
+	path = OST
+	url = https://github.com/rflamary/OST
