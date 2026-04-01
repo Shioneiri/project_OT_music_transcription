@@ -16,8 +16,12 @@ data/*.aif
 **/*.mat
 **/*.npy
 results/*
-#Ignore the results inside the submodule
+#Ignore the results inside the submodules and batch projects
 modelAttackDecay-for-piano-transcription/result/ 
+OST_Batch_Transcription/output/
+libnmfd/output/
+libnmfd/data/
+OST/output/
 
 # --- System & IDE Specific ---
 # MacOS specific junk
